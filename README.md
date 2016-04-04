@@ -1,4 +1,4 @@
-Getting and Cleaning Data Course Project
+Getting and Cleaning Data Course Project - MGFL
 ========================================
 
 Project of [Getting and Cleaning Data course on Coursera](https://www.coursera.org/course/getdata), May 2014 edition.
@@ -38,16 +38,15 @@ You should create one R script called run_analysis.R that does the following.
 
 * __CodeBook.md__: information about raw and tidy data set and elaboration made to
   transform them
-* __LICENSE__: license terms for text and code
 * __README.md__: this file
 * __run_analysis.R__: R script to transform raw data set in a tidy one
+* __data__: Folder with the original data of the project from .zip file 
 
 ## How to create the tidy data set
 
-1. clone this repository: `git clone git@github.com:maurotrb/getting-cleaning-data-2014-project.git`
-2. download [compressed raw data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-3. unzip raw data and copy the directory `UCI HAR Dataset` to the cloned repository root directory
-4. open a R console and set the working directory to the repository root (use setwd())
-5. source run_analisys.R script (it requires the plyr package): `source('run_analysis.R')`
+1. clone this repository
+2. open a R console and set the working directory to the repository root (use setwd())
+3. source run_analisys.R script (it requires the plyr,data.table and dplyr package): `source('run_analysis.R')` 
+4. Call function analysis with the data forlder where the data are, in this case: analysis("data").
 
-In the repository root directory you find the file `sensor_avg_by_act_sub.txt` with the tidy data set.
+In the repository root directory you find the file `tidydata.txt` with the tidy data set.
